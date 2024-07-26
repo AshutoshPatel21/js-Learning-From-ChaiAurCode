@@ -43,14 +43,14 @@ if (true) {
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
-
+//
 console.log(addone(5))
 
 function addone(num){
     return num + 1
 }
 
-
+//JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
 
 addTwo(5)
 const addTwo = function(num){
