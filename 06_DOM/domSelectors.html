@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-black{
+            background-color : #212121;
+            color: #ffff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id ="title" class="heading">Dom learning<span style="display: none"> test text</span> on </h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis saepe error hic consequatur eliga</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates voluptatum quam alias illum, iusto officia nesciunt consequatur omnis. Eaque quos animi inventore recusandae distinctio accusantium! Natus id placeat corporis sapiente?</p>
+        <ul>
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+    // console.log( document.getElementById("title"))
+    // console.log(document.getElementById("title").id)
+    // console.log(document.getElementById("title").className)
+    // console.log(document.getElementById("title").getAttribute("id"))
+    // console.log(document.getElementById("title").getAttribute("class"))
+    // document.getElementById("title").setAttribute("class","test heading")
+
+    // const title=document.getElementById("title")
+    // title.style.backgroundColor = "green"
+    // title.style.padding="10px"
+    // title.style.borderRadius= "5px"
+
+    // console.log(title.textContent) //Dom learning test text on  
+    // console.log(title.innerHTML)//Dom learning<span style="display: none"> test text</span> on 
+    // console.log(title.innerText)//Dom learning on
+
+    // console.log(document.querySelector('h2'))
+    // console.log(document.querySelector('#title'))
+    // console.log(document.querySelector('.heading'))
+
+    // console.log(document.querySelectorAll('li'))//returns nodelist-only foreach availabe
+    // const myLiList=document.querySelectorAll('li')
+    // // myLiList[0].style.color="green"
+    // myLiList.forEach((li)=>{
+    //     li.style.color="green"
+    // })
+
+    // console.log(document.getElementsByClassName("list")) //returns htmlCollection , foreach not 
+    const tempVar=document.getElementsByClassName("list")
+    let convertedArray=Array.from(tempVar)
+    convertedArray.forEach((li)=>{
+        li.style.color="red"
+    })
+</script>
+</html>
